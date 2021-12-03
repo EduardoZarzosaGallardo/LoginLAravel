@@ -20,7 +20,7 @@
         {{-- Name field --}}
         <div class="input-group mb-3">
             <input type="text" name="name" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
-                   value="{{ old('name') }}" placeholder="{{ __('adminlte::adminlte.full_name') }}" autofocus>
+                   value="{{ old('name') }}" placeholder="Nombre completo" autofocus>
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-user {{ config('adminlte.classes_auth_icon', '') }}"></span>
@@ -36,7 +36,7 @@
         {{-- Telephone field --}}
         <div class="input-group mb-3">
             <input type="number" name="telephone" class="form-control {{ $errors->has('telephone') ? 'is-invalid' : '' }}"
-                   value="{{ old('telephone') }}" placeholder="{{ __('telephone') }}" autofocus>
+                   value="{{ old('telephone') }}" placeholder="Telefono" autofocus>
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-phone {{ config('adminlte.classes_auth_icon', '') }}"></span>
@@ -52,7 +52,7 @@
          {{-- Direction field --}}
          <div class="input-group mb-3">
             <input type="text" name="direction" class="form-control {{ $errors->has('direction') ? 'is-invalid' : '' }}"
-                   value="{{ old('direction') }}" placeholder="{{ __('direction') }}" autofocus>
+                   value="{{ old('direction') }}" placeholder="Direccion" autofocus>
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-map {{ config('adminlte.classes_auth_icon', '') }}"></span>
@@ -68,7 +68,7 @@
         {{-- Email field --}}
         <div class="input-group mb-3">
             <input type="email" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}"
-                   value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}">
+                   value="{{ old('email') }}" placeholder="Correo electronico">
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-envelope {{ config('adminlte.classes_auth_icon', '') }}"></span>
@@ -85,7 +85,7 @@
         <div class="input-group mb-3">
             <input type="password" name="password"
                    class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                   placeholder="{{ __('adminlte::adminlte.password') }}">
+                   placeholder="Contraseña">
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-lock {{ config('adminlte.classes_auth_icon', '') }}"></span>
@@ -102,7 +102,7 @@
         <div class="input-group mb-3">
             <input type="password" name="password_confirmation"
                    class="form-control {{ $errors->has('password_confirmation') ? 'is-invalid' : '' }}"
-                   placeholder="{{ __('adminlte::adminlte.retype_password') }}">
+                   placeholder="Repite la contraseña">
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-lock {{ config('adminlte.classes_auth_icon', '') }}"></span>
@@ -118,7 +118,7 @@
         {{-- Register button --}}
         <button type="submit" class="btn btn-block {{ config('adminlte.classes_auth_btn', 'btn-flat btn-primary') }}">
             <span class="fas fa-user-plus"></span>
-            {{ __('adminlte::adminlte.register') }}
+            Registrarse
         </button>
 
     </form>
@@ -127,7 +127,7 @@
 @section('auth_footer')
     <p class="my-0">
         <a href="{{ $login_url }}">
-            {{ __('adminlte::adminlte.i_already_have_a_membership') }}
+            Ya tengo una cuenta
         </a>
     </p>
 @stop
