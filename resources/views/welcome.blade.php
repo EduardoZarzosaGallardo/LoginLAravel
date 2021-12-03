@@ -12,6 +12,23 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
+    <style>
+        html, body {
+            background-color: #fff;
+            height: 100vh;
+            margin: 0;
+        }
+        .content {
+            text-align: center;
+        }
+        .title {
+            font-size: 84px;
+        }
+        .m-b-md {
+            margin-top: 200px;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -34,23 +51,6 @@
         @endif
     </div>
 </nav>
-
-<style>
-    html, body {
-        background-color: #fff;
-        height: 100vh;
-        margin: 0;
-    }
-    .content {
-        text-align: center;
-    }
-    .title {
-        font-size: 84px;
-    }
-    .m-b-md {
-        margin-top: 200px;
-    }
-</style>
 
 <div class="content">
     <div class="title m-b-md">
